@@ -332,6 +332,7 @@ header {
   padding: 2vw;
   border: 2px dashed var(--silver);
 }
+
 .grid div:hover,
 .grid div:focus {
   background: linear-gradient(rgba(50, 50, 50, 0.1), rgba(134, 127, 173, 0.4));
@@ -351,12 +352,15 @@ header {
 .btw--index {
   background-image: url("../images/index-img1.jpg");
 }
+
 .btw--componentes {
   background-image: url("../images/componentes-img1.jpg");
 }
+
 .btw--perifericos {
   background-image: url("../images/perifericos-img1.jpg");
 }
+
 .btw-image {
   height: 200px;
   overflow: hidden;
