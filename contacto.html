@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geek Paradise</title>
-    <link rel="shortcut icon" href="images/logo-head.png" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="shortcut icon" href="/images/logo-head.png" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
       rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <!-- Font Awesome -->
     <link
@@ -20,92 +31,142 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
   </head>
-  <nav>
-    <a href="index.html" class="nav__index"
-      ><img src="images/nav_logo.png" alt="logo" class="nav__logo" />
-      <p class="nav__name"><span>Geek</span>Paradise</p></a
-    >
-    <buttom class="nav-toggle buttom-t"><span class="hamburger"></span></buttom>
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="buttom-t" href="componentes.html">Componentes</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="perifericos.html">Periféricos</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="servicios.html">Servicios</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="contacto.html">Contactanos</a>
-      </li>
-    </ul>
-  </nav>
-  <header>
-    <div class="container">
-      <div class="header__content">
-        <h1 class="header__tittle"><span>CONTACTO</span></h1>
-        <a href="#contacto" class="header__buttom"
-          ><i class="fa-solid fa-chevron-down buttom-t"></i
-        ></a>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/nav_logo.png"
+            alt="logo"
+            width="50"
+            height="50"
+            class="d-inline-block"
+          /><span class="d-none d-md-inline-block">Geek Paradise</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!--currentpage
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="componentes.html">Componentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perifericos.html">Periféricos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-  <main id="contacto">
-    <section>
-      <div class="contact">
-        <div class="container">
-          <div class="contact__local">
-            <h2>Locales</h2>
-            <ul>
-              <li>
-                <p>dirección-1</p>
-              </li>
-              <li>
-                <p>dirección-2</p>
-              </li>
-              <li>
-                <p>dirección-3</p>
-              </li>
-            </ul>
-          </div>
-          <div class="contact__home">
-            <h2>Contactos</h2>
-            <ul>
-              <li>
-                <p><i class="fa-brands fa-whatsapp"></i> xx-xxxx-xxxx</p>
-              </li>
-              <li>
-                <p><i class="fa-brands fa-twitter"></i> -----</p>
-              </li>
-              <li>
-                <p><i class="fa-brands fa-instagram"></i> -----</p>
-              </li>
-              <li>
-                <p>
-                  <i class="fa-solid fa-envelope"></i> contact@geek_paradise.com
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="contact__map">
-            <h2>Ubicación de nuestros locales</h2>
-            <div></div>
+    </nav>
+    <!-- header -->
+    <header>
+      <div
+        class="px-4 py-5 my- text-center hero d-flex flex-column justify-content-around"
+      >
+        <h1 class="display-1 display-md-5 fw-bold">
+          <span class="d-block">GEEK</span> PARADISE
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#content">
+              <button type="button" class="btn btn-hero btn-lg px-4 gap-3">
+                <i class="bi bi-chevron-compact-down"></i></button
+            ></a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer class="footer--white">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#2d3142"
-        fill-opacity="1"
-        d="M0,96L34.3,96C68.6,96,137,96,206,122.7C274.3,149,343,203,411,197.3C480,192,549,128,617,128C685.7,128,754,192,823,186.7C891.4,181,960,107,1029,106.7C1097.1,107,1166,181,1234,218.7C1302.9,256,1371,256,1406,256L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-      ></path>
-    </svg>
-    <p>Desarrollado por Martín Gerbasi</p>
-  </footer>
+    </header>
+    <!-- main -->
+    <main>
+      <section id="content" class="p-5 bg--dark overflow-hidden">
+        <div class="container mt-5">
+          <div class="row featurette">
+            <div class="col-md-5">
+              <h2 class="featurette-heading fs-1">Locales</h2>
+              <hr />
+              <ul class="list-group list-group-flush mb-5">
+                <li class="list-group-item bg--dark">dirección-1</li>
+                <li class="list-group-item bg--dark">dirección-2</li>
+                <li class="list-group-item bg--dark">dirección-3</li>
+              </ul>
+              <h2 class="featurette-heading fs-1">Contactos</h2>
+              <hr />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg--dark">
+                  <i class="fa-brands fa-whatsapp"></i> xx-xxxx-xxxx
+                </li>
+                <li class="list-group-item bg--dark">
+                  <i class="fa-brands fa-twitter"></i> -----
+                </li>
+                <li class="list-group-item bg--dark">
+                  <i class="fa-brands fa-instagram"></i> -----
+                </li>
+                <li class="list-group-item bg--dark text-nowrap">
+                  <i class="fa-solid fa-envelope"></i>
+                  contact@gk_paradise.com
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26203.7321591693!2d-58.443777544210974!3d-34.819361210665846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649972002389!5m2!1ses!2sar"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="var(--white)"
+          fill-opacity="1"
+          d="M0,96L34.3,96C68.6,96,137,96,206,122.7C274.3,149,343,203,411,197.3C480,192,549,128,617,128C685.7,128,754,192,823,186.7C891.4,181,960,107,1029,106.7C1097.1,107,1166,181,1234,218.7C1302.9,256,1371,256,1406,256L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+      <p class="text-center fw-bold text-muted mb-1">
+        Desarrollado por Martín Gerbasi
+      </p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

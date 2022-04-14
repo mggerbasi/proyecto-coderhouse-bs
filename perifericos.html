@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geek Paradise</title>
-    <link rel="shortcut icon" href="images/logo-head.png" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="shortcut icon" href="/images/logo-head.png" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
       rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <!-- Font Awesome -->
     <link
@@ -20,246 +31,427 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
   </head>
-  <nav>
-    <a href="index.html" class="nav__index"
-      ><img src="images/nav_logo.png" alt="logo" class="nav__logo" />
-      <p class="nav__name"><span>Geek</span>Paradise</p></a
-    >
-    <buttom class="nav-toggle buttom-t"><span class="hamburger"></span></buttom>
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="buttom-t" href="componentes.html">Componentes</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="perifericos.html">Periféricos</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="servicios.html">Servicios</a>
-      </li>
-      <li class="nav__item">
-        <a class="buttom-t" href="contacto.html">Contactanos</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="mini-nav">
-    <ul>
-      <a href="#auriculares"
-        ><li><i class="fa-solid fa-headphones"></i></li
-      ></a>
-      <a href="#ratones"
-        ><li><i class="fa-solid fa-computer-mouse"></i></li
-      ></a>
-      <a href="#teclados"
-        ><li><i class="fa-solid fa-keyboard"></i></li
-      ></a>
-      <a href="#webcams"
-        ><li><i class="fa-solid fa-video"></i></li
-      ></a>
-      <a href="#monitores"><i class="fa-solid fa-desktop"></i></a>
-    </ul>
-  </div>
-  <header>
-    <div class="container">
-      <div class="header__content header--componentes">
-        <h1 class="header__tittle"><span>PERIFÉ</span>RICOS</h1>
-        <a href="#auriculares" class="header__buttom"
-          ><i class="fa-solid fa-chevron-down buttom-t"></i
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/nav_logo.png"
+            alt="logo"
+            width="50"
+            height="50"
+            class="d-inline-block"
+          /><span class="d-none d-md-inline-block">Geek Paradise</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="componentes.html">Componentes</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="perifericos.html"
+                >Periféricos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mini-nav">
+      <ul>
+        <a href="#auriculares"
+          ><li><i class="fa-solid fa-headphones"></i></li
         ></a>
-      </div>
+        <a href="#ratones"
+          ><li><i class="fa-solid fa-computer-mouse"></i></li
+        ></a>
+        <a href="#teclados"
+          ><li><i class="fa-solid fa-keyboard"></i></li
+        ></a>
+        <a href="#webcams"
+          ><li><i class="fa-solid fa-video"></i></li
+        ></a>
+        <a href="#monitores"><i class="fa-solid fa-desktop"></i></a>
+      </ul>
     </div>
-  </header>
-  <main>
-    <section class="partners">
-      <div class="container">
-        <h2>Marcas con las que trabajamos</h2>
-        <div class="carrousel">
-          <div>
-            <img src="images/intel-logo.png" alt="Intel" />
-            <img src="images/kingston-logo.png" alt="Kingston" /><img
-              src=" images/logitech-logo.png"
-              alt="Logitech"
-            />
-            <img src="images/nvidia-logo.png" alt="Nvidia" /><img
-              src="images/redragon-logo.png"
-              alt="Redragon"
-            />
-            <img src="images/amd-logo.png" alt="AMD" /><img
-              src="images/thermaltake.png"
-              alt="Thermaltake"
-            />
+    <!-- Header -->
+    <header>
+      <div
+        class="px-4 py-5 my- text-center hero d-flex flex-column justify-content-around"
+      >
+        <h1 class="display-1 display-md-5 fw-bold">
+          <span class="d-block">PERIFÉRICOS</span>
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#auriculares">
+              <button type="button" class="btn btn-hero btn-lg px-4 gap-3">
+                <i class="bi bi-chevron-compact-down"></i></button
+            ></a>
           </div>
         </div>
       </div>
-    </section>
-    <div class="btw-image btw--perifericos"></div>
-    <section id="auriculares" class="productos productos--violet">
-      <div class="container">
-        <div>
-          <h2>Auriculares</h2>
-          <div class="grid grid8">
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="partners d-none d-md-block">
+        <div class="container">
+          <h2>Marcas con las que trabajamos</h2>
+          <div class="carrousel">
             <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre de los auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/auricular.png" alt="Auriculares" />
-              <p>-nombre del auriculares-<span>$---</span></p>
+              <img src="images/intel-logo.png" alt="Intel" />
+              <img src="images/kingston-logo.png" alt="Kingston" /><img
+                src="images/logitech-logo.png"
+                alt="Logitech"
+              />
+              <img src="images/nvidia-logo.png" alt="Nvidia" /><img
+                src="images/redragon-logo.png"
+                alt="Redragon"
+              />
+              <img src="images/amd-logo.png" alt="AMD" /><img
+                src="images/thermaltake.png"
+                alt="Thermaltake"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="ratones" class="productos productos--white">
-      <div class="container">
-        <div>
-          <h2>Ratones</h2>
-          <div class="grid grid8">
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+      </section>
+      <div class="btw-image btw--perifericos d-none d-md-block"></div>
+      <section id="auriculares" class="bg--dark">
+        <div class="container p-5">
+          <h2 class="text-center fw-bold mt-5">Auriculares</h2>
+          <hr />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 products">
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/raton.png" alt="Ratón" />
-              <p>-nombre del ratón-<span>$---</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="teclados" class="productos productos--violet">
-      <div class="container">
-        <div>
-          <h2>Teclados</h2>
-          <div class="grid grid4">
-            <div>
-              <img src="images/teclado.png" alt="Teclado" />
-              <p>-nombre del teclado-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/teclado.png" alt="Teclado" />
-              <p>-nombre del teclado-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/teclado.png" alt="Teclado" />
-              <p>-nombre del teclado-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/teclado.png" alt="Teclado" />
-              <p>-nombre del teclado-<span>$---</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="webcams" class="productos productos--white">
-      <div class="container">
-        <div>
-          <h2>Web Cams</h2>
-          <div class="grid grid4">
-            <div>
-              <img src="images/webcam.png" alt="WebCam" />
-              <p>-nombre de la webcam-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/webcam.png" alt="WebCam" />
-              <p>-nombre de la webcam-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/webcam.png" alt="WebCam" />
-              <p>-nombre de la webcam-<span>$---</span></p>
-            </div>
-            <div>
-              <img src="images/webcam.png" alt="WebCam" />
-              <p>-nombre de la webcam-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/auricular.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">auricular</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="monitores" class="productos productos--violet">
-      <div class="container">
-        <div>
-          <h2>Monitores</h2>
-          <div class="grid grid4">
-            <div>
-              <img src="images/monitor.png" alt="Monitor" />
-              <p>-nombre del monitor-<span>$---</span></p>
+      </section>
+      <section id="ratones" class="bg--light">
+        <div class="container p-5">
+          <h2 class="text-center fw-bold mt-5">Ratones</h2>
+          <hr />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 products">
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/monitor.png" alt="Monitor" />
-              <p>-nombre del monitor-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/monitor.png" alt="Monitor" />
-              <p>-nombre del monitor-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="images/monitor.png" alt="Monitor" />
-              <p>-nombre del monitor-<span>$---</span></p>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/raton.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">ratón</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#2d3142"
-        fill-opacity="1"
-        d="M0,96L34.3,96C68.6,96,137,96,206,122.7C274.3,149,343,203,411,197.3C480,192,549,128,617,128C685.7,128,754,192,823,186.7C891.4,181,960,107,1029,106.7C1097.1,107,1166,181,1234,218.7C1302.9,256,1371,256,1406,256L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-      ></path>
-    </svg>
-    <p>Desarrollado por Martín Gerbasi</p>
-  </footer>
+      </section>
+      <section id="teclados" class="bg--dark">
+        <div class="container p-5">
+          <h2 class="text-center fw-bold mt-5">Teclados</h2>
+          <hr />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 products">
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/teclado.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">teclado</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/teclado.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">teclado</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/teclado.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">teclado</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/teclado.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">teclado</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="webcams" class="bg--light">
+        <div class="container p-5">
+          <h2 class="text-center fw-bold mt-5">Web Cams</h2>
+          <hr />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 products">
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/webcam.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">webcam</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/webcam.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">webcam</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/webcam.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">webcam</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--light text-center">
+                <img src="images/webcam.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">webcam</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="monitores" class="bg--dark">
+        <div class="container p-5">
+          <h2 class="text-center fw-bold mt-5">Monitores</h2>
+          <hr />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 products">
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/monitor.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">monitor</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/monitor.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">monitor</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/monitor.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">monitor</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg--dark text-center">
+                <img src="images/monitor.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">monitor</h5>
+                  <p class="card-text card-price">$---</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="var(--white)"
+          fill-opacity="1"
+          d="M0,96L34.3,96C68.6,96,137,96,206,122.7C274.3,149,343,203,411,197.3C480,192,549,128,617,128C685.7,128,754,192,823,186.7C891.4,181,960,107,1029,106.7C1097.1,107,1166,181,1234,218.7C1302.9,256,1371,256,1406,256L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+      <p class="text-center fw-bold text-muted mb-1">
+        Desarrollado por Martín Gerbasi
+      </p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
