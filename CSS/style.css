@@ -119,6 +119,10 @@ body {
   background-color: var(--white);
 }
 
+.animate__animated.animate__pulse {
+  --animate-duration: 4s;
+}
+
 .btw-image {
   height: 300px;
   overflow: hidden;
@@ -190,7 +194,9 @@ footer {
   color: var(--black);
   border: none;
 }
-
+footer svg .animate__animated.animate__pulse {
+  --animate-duration: 1.7s;
+}
 footer p {
   background-color: var(--white);
 }
