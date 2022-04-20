@@ -194,3 +194,16 @@ footer {
 footer p {
   background-color: var(--white);
 }
+div div:hover {
+  background: transparent;
+}
+/* footer */
+footer {
+  background-color: #333;
+  color: var(--black);
+  border: none;
+}
+
+footer p {
+  background-color: var(--white);
+}
