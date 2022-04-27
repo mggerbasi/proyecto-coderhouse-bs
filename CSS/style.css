@@ -134,7 +134,10 @@ main .products div div div:hover {
   background: transparent;
 }
 main .products div div:hover {
-  background: linear-gradient(rgba(150, 150, 150, 0.1), rgba(150, 150, 150, 0.4));
+  background: linear-gradient(
+    rgba(150, 150, 150, 0.1),
+    rgba(150, 150, 150, 0.4)
+  );
   cursor: default;
 }
 main .products .card .card-price {
