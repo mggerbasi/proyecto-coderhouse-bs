@@ -1,5 +1,17 @@
 .nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  .navbar-brand span {
+    transition-duration: 0.4s;
+  }
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    .span--geek {
+      color: $orange;
+    }
+    .span--paradise {
+      color: $silver;
+    }
+  }
 }
 .mini-nav {
   background: linear-gradient($orange, orange);
