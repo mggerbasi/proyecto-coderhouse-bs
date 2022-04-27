@@ -1,0 +1,18 @@
+footer {
+  background-color: #333;
+  color: $black;
+  border: none;
+  p {
+    background-color: $white;
+  }
+  div {
+    div:hover {
+      background: transparent;
+    }
+  }
+  svg {
+    .animate__animated.animate__pulse {
+      --animate-duration: 1.7s;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+main {
+  .btw-image {
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .btw--index {
+    background-image: url("../images/index-img1.jpg");
+  }
+
+  .btw--componentes {
+    background-image: url("../images/componentes-img1.jpg");
+  }
+
+  .btw--perifericos {
+    background-image: url("../images/perifericos-img1.jpg");
+  }
+  .animate__animated.animate__pulse {
+    --animate-duration: 4s;
+  }
+  .partners {
+    background-color: $white;
+    color: $black;
+    .container {
+      padding: 6vh 0;
+      h2 {
+        text-align: center;
+        border-bottom: 3px dotted $lblue;
+      }
+      .carrousel {
+        div {
+          display: flex;
+          column-gap: 2vh;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        img {
+          min-height: 82px;
+          height: 6vw;
+        }
+      }
+    }
+  }
+  .products {
+    div {
+      div {
+        padding: 20px;
+        div:hover {
+          background: transparent;
+        }
+      }
+      div:hover {
+        background: linear-gradient(
+          rgba(150, 150, 150, 0.1),
+          rgba(150, 150, 150, 0.4)
+        );
+        cursor: default;
+      }
+    }
+    .card {
+      .card-price {
+        color: $green;
+      }
+    }
+  }
+}
