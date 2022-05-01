@@ -1,10 +1,8 @@
 main {
   .btw-image {
+    @include background__attached;
     height: 300px;
     overflow: hidden;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
   }
   .btw--index {
     background-image: url("../images/index-img1.jpg");
@@ -21,8 +19,7 @@ main {
     --animate-duration: 4s;
   }
   .partners {
-    background-color: $white;
-    color: $black;
+    @extend .bg--light;
     .container {
       padding: 6vh 0;
       h2 {
@@ -31,10 +28,8 @@ main {
       }
       .carrousel {
         div {
-          display: flex;
+          @include flex__center(row);
           column-gap: 2vh;
-          align-items: center;
-          justify-content: center;
           flex-wrap: wrap;
         }
         img {

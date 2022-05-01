@@ -1,0 +1,21 @@
+$dblue: #2d3142;
+$lblue: #4f5d75;
+$orange: #ef8354;
+$silver: #bfc0c0;
+$white: #f4f4f4;
+$black: #333;
+$violet: #2b012f;
+$green: #128920;
+
+$contacts: (
+  whatsapp: #00bb2d,
+  twitter: #00acee,
+  instagram: #e1306c,
+  mail: #b1b1b1,
+);
+@each $contact, $color in $contacts {
+  .contact--#{$contact}:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}

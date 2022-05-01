@@ -1,12 +1,10 @@
 header {
   .hero {
     background: url(../images/index-bg.jpg), rgba(0, 0, 0, 0.9);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
-    display: flex;
     font-size: 50px;
+    @include flex__center(column);
+    @include background__attached;
     h1 {
       color: $black;
       -webkit-text-stroke: 1px black;

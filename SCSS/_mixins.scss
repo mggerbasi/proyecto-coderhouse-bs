@@ -1,0 +1,11 @@
+@mixin flex__center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+@mixin background__attached {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}

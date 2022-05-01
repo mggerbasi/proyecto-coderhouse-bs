@@ -1,9 +1,9 @@
-@import "paleta";
+@import "variables";
+@import "mixins";
 @import "nav";
 @import "header";
 @import "main";
 @import "footer";
-
 body {
   font-family: "Montserrat", sans-serif;
   ::selection {

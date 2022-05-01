@@ -1,9 +1,8 @@
 footer {
-  background-color: #333;
-  color: $black;
+  @extend .bg--dark;
   border: none;
   p {
-    background-color: $white;
+    @extend .bg--light;
   }
   div {
     div:hover {
